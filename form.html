@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review</title>
+  <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <form method="get" action="review.html" id="product-review-form">
+      <div class="form-group">
+        <label for="product-name">Product Name</label>
+        <select id="product-name" name="product-name" required aria-label="Select a product">
+          <option value="" disabled selected>Select a Product...</option>
+          <!-- Product here -->
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Overall Rating</label>
+        <div class="stars" aria-label="Overall rating">
+            <input type="radio" id="fivestar" name="stars" value="5" required>
+            <label for="fivestar" aria-label="5 stars"></label>
+            <input type="radio" id="fourstar" name="stars" value="4" required>
+            <label for="fourstar" aria-label="4 stars"></label>
+            <input type="radio" id="threestar" name="stars" value="3" required>
+            <label for="threestar" aria-label="3 stars"></label>
+            <input type="radio" id="twostar" name="stars" value="2" required>
+            <label for="twostar" aria-label="2 stars"></label>
+            <input type="radio" id="onestar" name="stars" value="1" required>
+            <label for="onestar" aria-label="1 star"></label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="installation-date">Date of Installation</label>
+        <input type="date" id="installation-date" name="installation-date" required placeholder="MM/DD/YYYY">
+      </div>
+
+      <div class="form-group">
+        <label>Which features did you find useful?</label>
+        <div class="checkbox-group" aria-label="Useful features">
+            <div class="input-choice"><input type="checkbox" id="feature-durability" name="features[]" value="durability">
+                <label for="feature-durability">Durability</label></div>
+
+           <div class="input-choice"><input type="checkbox" id="feature-ease-of-use" name="features[]" value="ease-of-use">
+          <label for="feature-ease-of-use">Ease of Use</label></div>
+          <div class="input-choice"><input type="checkbox" id="feature-performance" name="features[]" value="performance">
+          <label for="feature-performance">Performance</label></div>
+          <div class="input-choice"><input type="checkbox" id="feature-design" name="features[]" value="design">
+          <label for="feature-design">Design</label></div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="written-review">Written Review (Optional)</label>
+        <textarea id="written-review" name="written-review" placeholder="Share your thoughts..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="user-name">Your Name (Optional)</label>
+        <input type="text" id="user-name" name="user-name" placeholder="Enter your name">
+      </div>
+
+      <div class="form-actions">
+        <button type="submit">Post Review</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Carly Tesnor</p>
+    <p>Last modified: <span id="last-modified"></span></p>
+  </footer>
+
+  <script src="scripts/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CookPal | Details</title>
+  <link rel="stylesheet" href="styles/project.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img class="logo-img" src="images/logo.png" alt="Logo">
+                <h1 class="logo"><a href="index.html">CookPal</a></h1>
+            </div>
+            <div class="hamburger" id="hamburger">
+                &#9776; <!-- This is the hamburger icon -->
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" class="account-btn">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+      <div class="container">
+        <div class="meal-details">
+          <img id="meal-image" src="" alt="">
+          <div class="meal-info">
+            <h1 id="meal-name"></h1>
+            <p id="meal-area-category"></p>
+            <p id="meal-instructions"></p>
+            <h2>Ingredients:</h2>
+            <ul id="ingredient-list"></ul>
+            <a id="meal-video-link" target="_blank">
+              <img id="meal-video-thumbnail" src="" alt="Meal Video">
+            </a>
+          </div>
+        </div>
+      </div>
+
+  <script src="scripts/project.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CookPal | Recipes</title>
+  <link rel="stylesheet" href="styles/project.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img class="logo-img" src="images/logo.png" alt="Logo">
+                <h1 class="logo"><a href="index.html">CookPal</a></h1>
+            </div>
+            <div class="hamburger" id="hamburger">
+                &#9776; <!-- This is the hamburger icon -->
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" class="account-btn">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+  <div class="container">
+    <div class="loading-container">
+        <div class="loading-spinner"></div>
+        <h2>Hold on! Stirring up a feast...</h2>
+    </div>
+    <div class="row" id="meal-container">
+          <!-- Meal cards will be dynamically generated here -->
+    </div>
+  </div>
+  <script src="scripts/project.js"></script>
+</body>
+</html>

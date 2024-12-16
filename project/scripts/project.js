@@ -9,7 +9,7 @@ hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
-const alphabet = 'abcdefghijk'.split('');
+const alphabet = 'abcdefgh'.split('');
 const mealContainer = document.getElementById('meal-container');
 const loadingContainer = document.querySelector('.loading-container');
 
